@@ -1,3 +1,4 @@
+'use client'
 import React, { useState } from 'react'
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"
 import { Button } from "@/components/ui/button"
@@ -5,7 +6,6 @@ import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar"
 import { Moon, Sun, Twitter, Twitch, Youtube } from 'lucide-react'
 import Link from 'next/link'
 
-// Simulated player data
 const playerData = {
   name: "Faker",
   summonerName: "Hide on bush",
@@ -26,7 +26,7 @@ const playerData = {
   ]
 }
 
-export default function Component() {
+export default function PlayerComponent() {
   const [darkMode, setDarkMode] = useState(false)
 
   const toggleDarkMode = () => {
